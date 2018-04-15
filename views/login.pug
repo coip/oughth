@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  form(action="/login" method="POST")
+    fieldset(name="loginfieldset")
+      legend login
+      div.input-group.fluid
+        label(for="username") username
+        input(type="text" value="" name="username" id="username" placeholder="")
+      div.input-group.fluid
+        label(for="pwd") password
+        input(type="password" value="" name="password" id="pwd" placeholder="")
+      button(type="submit") login
+      a.button(href="/register") sign-up

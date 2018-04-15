@@ -4,6 +4,7 @@
   "description": "example of totp 2fa using speakeasy",
   "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "mongodb": "^3.0.6",
     "pug": "^2.0.3",
