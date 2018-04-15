@@ -1,0 +1,22 @@
+{
+  "name": "oughth",
+  "version": "1.0.0",
+  "description": "example of totp 2fa using speakeasy",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.0.6",
+    "pug": "^2.0.3",
+    "qrcode": "^1.2.0",
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "test": "DEBUG=express:* node server.js",
+    "start": "nodemon server.js"
+  },
+  "author": "e@coip.me",
+  "license": "MIT"
+}
