@@ -49,11 +49,11 @@ app.post('/register', (req, res) => {
 	let username = req.body.username,
 	    password = req.body.password;
 
-	bcrypt.hash(password, saltRounds, (err, password) => {
+	bcrypt.hash(password, saltRounds, (err, bcryptedpw) => {
 		if(err) 
 			res.send("register post err: %s", err)
 		else {
-			addDocument({ username, password }, 'users');
+			addDocument({ username, bcryptedpw }, 'users');
 			res.send(200);
 		}
 	});
